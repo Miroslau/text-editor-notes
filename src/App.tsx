@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import AppRouter from "./components/app-router";
 import AppLayout from "./components/app-layout";
 import { purple } from "@mui/material/colors";
@@ -25,11 +25,11 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <AppLayout>
           <AppRouter />
         </AppLayout>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
