@@ -15,7 +15,7 @@ export const openDatabase = async () => {
 };
 
 export const addNote = async (note: noteType, tags: string[]) => {
-  if (tags.length > 0) {
+  if (tags && tags.length > 0) {
     note.tags = [...tags];
   }
   const db = await openDatabase();
