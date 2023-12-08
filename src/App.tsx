@@ -5,7 +5,7 @@ import AppLayout from "./components/app-layout";
 import { purple } from "@mui/material/colors";
 import { ThemeProvider } from "@material-ui/core";
 import { createTheme } from "@material-ui/core/styles";
-
+//
 const theme = createTheme({
   palette: {
     primary: {
