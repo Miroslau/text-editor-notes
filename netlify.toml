@@ -1,9 +1,0 @@
-[build]
-  command = "npm run build"
-  functions = "lambda"
-
-[build.environment]
-  NODE_VERSION = "14"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
